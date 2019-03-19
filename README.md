@@ -4,7 +4,7 @@ Add as a first buildpack in the chain. Set `PROJECT_PATH` environment variable t
 
 # How to use:
 1. `heroku buildpacks:clear` if necessary
-2. `heroku buildpacks:set https://github.com/timanovsky/subdir-heroku-buildpack`
+2. `heroku buildpacks:set https://github.com/verypossible/subdir-heroku-buildpack.git#v1.0`
 3. `heroku buildpacks:add heroku/nodejs` or whatever buildpack you need for your application
 4. `heroku config:set PROJECT_PATH=projects/nodejs/frontend` pointing to what you want to be a project root.
 5. Deploy your project to Heroku.
